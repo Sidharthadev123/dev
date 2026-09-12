@@ -4,7 +4,7 @@ import {BrowserRouter} from 'react-router-dom'
 
 import App from './App'
 
-window.process = window.process || {env: {NODE_ENV: 'development'}}
+globalThis.process = globalThis.process || {env: {NODE_ENV: 'development'}}
 
 ReactDOM.render(
   <React.StrictMode>
